@@ -1,0 +1,43 @@
+/******************************************************************************
+
+Title:      PartialArray.cpp
+Author:     Max Taylor
+Date:       3/12/19
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+//
+
+const int SIZE=40;
+int main()
+{
+    const int TESTS = 5;
+    const int STUDENTS= 4;
+    int scores[TESTS][STUDENTS];
+    
+    cout << "Input test scores:\n";
+    
+    for (int i=0; i < TESTS; i++)
+    {
+        cout << "Test # " << i + 1 << "\n";
+        cout << STUDENTS << " students:\n";
+        for(int j=0; j < STUDENTS; j++)
+        {
+            cin >> scores[i][j];
+        }
+    }
+    
+    for (int i=0; i < TESTS; i++){
+        cout << "Test #" << i + 1;
+        for (int j=0; j < STUDENTS; j++)
+            cout << "Student " << j+ 1 << " "
+                << scores[i][j] << endl;
+    }
+    int nums[] = {8,2,6,4,1,9};
+    int temp;
+    bool swapped = true;
+    
+    return 0;
+}
